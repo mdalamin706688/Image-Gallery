@@ -1,0 +1,76 @@
+.image {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: grab;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.image:hover {
+  background-color: #bfb7b7;
+  transform: scale(1.05);
+}
+
+.image:active {
+  cursor: grabbing;
+}
+
+.image img {
+  max-width: 100%;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.feature-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkbox {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.drag-handle {
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.drag-handle:hover {
+  color: #555;
+}

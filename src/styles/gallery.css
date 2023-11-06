@@ -1,0 +1,106 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 26px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+  padding: 15px;
+}
+
+.gallery .image:first-child {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.selected-count {
+  display: flex;
+  gap: 8px;
+}
+
+.selected {
+  border: 1px solid #000;
+  filter: blur(1px);
+}
+
+.feature {
+  border: 2px solid #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+}
+
+.image img {
+  max-width: 100%;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px gray;
+  border-radius: 4px;
+  margin-bottom: 1px;
+}
+
+.delete-button {
+  background-color: #ff2600;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.feature-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkbox {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.image:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
